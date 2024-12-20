@@ -1,13 +1,12 @@
 # 🎥 Netflix Clone
 
+## Despliegue
+Puedes acceder al proyecto desplegado en: [Netflix Home Clone](https://stunning-tapioca-b411fe.netlify.app/)
+
 ## Descripción
 Este proyecto es una imitación del home de Netflix, desarrollado con Vite y React. Permite explorar:
 - 🎬 Películas que están próximas a estrenarse.
 - 📂 Listas de películas organizadas por género.
-
-## Capturas de pantalla
-![Captura del home](ruta/a/la/imagen1.png)
-![Lista de películas](ruta/a/la/imagen2.png)
 
 ## Características
 - Diseño inspirado en Netflix.
@@ -29,7 +28,3 @@ Este proyecto es una imitación del home de Netflix, desarrollado con Vite y Rea
 Este proyecto utiliza [The Movie Database API (TMDB)](https://www.themoviedb.org/). 
 1. Regístrate en TMDB para obtener una API Key.
 2. Crea un archivo `.env` en el directorio raíz y añade tu API Key:
-
-## Despliegue
-Puedes acceder al proyecto desplegado en: [Netflix Clone en GitHub Pages](https://tu-usuario.github.io/nombre-del-repo/)
-
