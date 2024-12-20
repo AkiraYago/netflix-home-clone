@@ -1,0 +1,11 @@
+.CarouselInner {
+  height: 80svh;
+}
+
+.Highlighted {
+  .ButtonPrev, .ButtonNext {
+    height: 100px;
+    width: 100px;
+    align-self: center;
+  }
+}

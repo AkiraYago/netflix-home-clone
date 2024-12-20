@@ -1,0 +1,91 @@
+.MovieChunk {
+  position: relative;
+}
+
+.MovieImg {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.5rem;
+}
+
+.Details {
+  position: relative;
+  background-color: rgba(34, 34, 34, 0) !important;
+  color: white;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  
+  transition: width 0.5s, top 0.5s, left 0.5s, transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+@media (576px < width) {
+  .Details:hover {
+    left: -10%;
+    top: -50%;
+    width: 120%;
+    cursor: pointer;
+  }
+}
+
+@media (width < 576px) {
+  .Details:hover {
+    cursor: pointer;
+  }
+}
+
+.CardFront, .CardBack {
+  background-color: rgba(34, 34, 34, 1);
+  position: absolute;
+  backface-visibility: hidden !important;
+  min-width: 100%;
+  min-height: 350px;
+  max-height: 400px;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.CardFront {
+  transform: rotateY(0deg);
+}
+
+.CardBack {
+  transform: rotateY(180deg);
+  overflow-y: auto;
+  scrollbar-color: white rgba(34, 34, 34, 1);
+  scrollbar-width: thin;
+  padding: 20px 20px;
+
+  .Description {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.NoImage {
+  color: white; 
+  background-color: black;
+  height: 100%; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.Body > * {
+  color: white;
+}
+
+.Genres {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.GenreItem {
+  background-color: gray;
+  padding: 2px 10px;
+  border-radius: 1rem;
+  font-size: 14px;
+}

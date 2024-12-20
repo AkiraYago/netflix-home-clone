@@ -1,0 +1,26 @@
+.MoviesCarousel {
+  height: fit-content;
+  overflow: visible !important;
+}
+
+.MovieChunksList {
+  display: flex;
+}
+
+.MoviesList {
+  padding-left: 40px;
+  padding-top: 40px;
+
+  .ButtonPrev,
+  .ButtonNext {
+    height: 100px;
+    width: 100px;
+    align-self: center;
+  }
+}
+
+@media (0px <= width <= 576px) {
+  .MoviesList {
+    padding-left: 10px;
+  }
+}

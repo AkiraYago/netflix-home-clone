@@ -1,0 +1,33 @@
+.MovieSlide {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+
+  .Text {
+    position: sticky;
+    bottom: 0;
+    padding: 40px;
+    color: white;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  @media (0px <= width <= 768px) {
+    .Text {
+      width: 100%;
+      background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+      padding: 20px;
+    }
+  }
+  
+  .Description {
+    height: 8rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
